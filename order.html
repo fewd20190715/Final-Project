@@ -1,0 +1,97 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="fiyori">
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+        <title>Order Online!</title>
+    </head>
+    <body>
+        <div class="bg"></div>
+            <div class="container">
+            <nav class="navbar navbar-default navbar-static-top" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".memnon-navbar-menu">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                <a class="navbar-brand" href="index.html"></a>
+                </div>
+        <div class="collapse navbar-collapse pizza-navbar-menu">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li> 
+                <li> <a href="about.html">About</a></li>                    
+                <li><a href="menu.html">Menu</a></li>    
+                <li><a href="gallery.html">Gallery</a></li>   
+                <li><a href="index.html">Contact us</a></li>  
+                <li><a href="index.html">Hourse of operation</a></li>                     
+                <li class="active"><a href="#">Order Online!</a></li>
+            </ul>
+        </div>
+            </nav>
+        <div id="center">
+            <div>
+                <h1>Order Online!</h1>
+                <h3>We deliver only from 12am to noon 11 PM.</h3>
+                <h3>We accept cash or credit cards on delivery!</h3>
+                <hr>
+                <h2>Ethiopian Food</h2>                
+            </div>  
+            <a href="menu.html">Menu</a>
+        <div class="col-md-4 scroll">
+            <div class="fixed">
+                <h2>Your Cart</h2>
+             <div class="cart-items-container"></div>
+                <div class="cart-footer">
+                    <div class="row">
+                        <div class="col-xs-9">SubTotal:</div>
+                            <div class="col-xs-2">$<span class="subtotal-price"></span></div>
+            </div>
+         <div class="row">
+            <div class="col-xs-9">Tax:</div>
+                <div class="col-xs-2">$<span class="tax-price"></span></div>
+            </div>
+        <div class="row total-row">
+            <div class="col-xs-9">Total:</div>
+                <div class="col-xs-2">$<span class="total-price"></span></div>
+                    <div class="minimum"></div>
+            </div>
+        <div class="row">
+            <div class="button-row">
+                <button type="button" class="btn btn-primary start-over">Clear Cart</button>
+            </div>
+        </div>                        
+    </div>
+        <div class="cart-template"></div>
+</div> 
+<form method="POST" action="http://Memnon.com/orders/" class="form-horizontal order-form" role="form">
+    <label class="control-label" for="first-name">Name</label>
+        <input type="text" class="form-control" name="name" id="first-name" placeholder="name" required>
+        <label class="control-label" for="addr-1">Address</label>
+        <input type="text" class="form-control" name="addr-1" id="addr-1" placeholder="street address" required>
+        <input type="text" class="form-control" name="addr-2">
+        <label class="control-label" for="city">Zip</label>
+        <input type="text" class="form-control" name="zip" placeholder="zip code" required>
+        <label class="control-label" for="phone">Phone</label>
+        <input type="tel" class="form-control" name="phone" id="phone" placeholder="primary phone number" required>
+        <input type="hidden" name="cart"></input>
+<div class="button-row">
+        <a href="signup.html">Order now!</a>
+        <button type="button" class="btn btn-success last-order">Use Last Order</button>
+</div>
+</form>     
+</div>
+    </div>
+        </div>
+        </div>
+<footer>
+    <p>Call us for delivery: 9293770520 || Copyright &copy; Memnon, 2019 || All rights reserved</p>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
